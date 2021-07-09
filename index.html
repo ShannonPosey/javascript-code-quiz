@@ -9,8 +9,80 @@
 </head>
 <body>
     <head>
-        <!-- This app will run in the browser, and will feature dynamically updated HTML and CSS powered by JavaScript code that I will write-->
+        <div>
+            <!-- View Highscore-->
+            <div>
+                View High Scores
+            </div>
+            <!-- Timer-->
+            <div>
+                <p>Time:75s</p>
+            </div>
+        </div>
     </head>
+
+    <!-- Main Content-->
+    <main>
+        <!-- Display the intro, Questions, and Answers-->
+        <div>
+            <section>
+                <div>
+                    <div></div>
+                    <div>
+                        <h1>Welcome to JavaScript Code Quiz Challenge </h1>
+                        <p>Try to answer the following code-related questions within a time limit. Keep in mind that incorrect answer will penalize your score/time by ten seconds!</p>
+                        <button id="start" type="button" class="btn btn-start">Start Quiz</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Question Section-->
+            <section class="questions">
+                <div>
+                    <div></div>
+                    <div>
+                        <h2 id="question">Questions GO Here</h2>
+                        <ul>
+                            <li class=""><button class="btn ansBtn" id="answer1" type="button">Answer1</button></li>
+                            <li class=""><button class="btn ansBtn" id="answer2" type="button">Answer2</button></li>
+                            <li class=""><button class="btn ansBtn" id="answer3" type="button">Answer3</button></li>
+                            <li class=""><button class="btn ansBtn" id="answer4" type="button">Answer4</button></li>
+                        </ul>
+                        <hr>
+                        <!-- Will display "Correct!" or "Wrong!" here-->
+                    </div>
+                </div>
+            </section>
+            <!-- Section for the Highscore-->
+            <section>
+                <section id="">
+                    <div>
+                        <div></div>
+                        <div>
+                            <h2>All done!</h2>
+                            <p> Your final score is: <span id="" class=""></span>0</p>
+                            <p>Enter initials: <span class=""><input placeholder="initials" id=""/></span>
+                            <button class="btn" id="" type="submit">Submit</button></p>
+                        </div>
+                    </div>
+                </section>
+
+            </section>
+            <section id="highscore">
+                <div>
+                    <div></div>
+                    <div>
+                        <h2>High Scores</h2>
+                        <ol>
+                            <!-- <li></li> -->
+                        </ol>
+                        <button class="btn" id="" type="button">Go Back</button>
+                        <button class="btn" id="" type="button">Clear Scores</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
     <script src="./assets/js/quiz.js"></script>
 </body>
 </html>
