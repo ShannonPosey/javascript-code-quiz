@@ -11,6 +11,16 @@ HTML
 CSS
 JavaScript
 
+## Start Quiz
+![code quiz demo](./assets/img/)
+
+## Question Section
+![code quiz demo](./assets/img/)
+
+## Submit Scores Section
+![code quiz demo](./assets/img/)
+
+## High Score Section
 ![code quiz demo](./assets/img/)
 
 ### Website

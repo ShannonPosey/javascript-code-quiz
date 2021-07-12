@@ -16,6 +16,31 @@
 /**** Styling the Code Quiz ****/
 // use assignment 1 to style the quiz
 
+// need variables for timer
+var timerEl = document.getElementById('');
+// need variable for seconds counting down from 75
+var secondsEl = function() {};
+// need variable for scores
+var scoreTotalEl = function() {};
+// need variable and Function for intro section
+var introEl = function () {};
+// need Function to addEventListener for start button 
+var startBtn = document.getElementById('');
+// need Function for question to be displayed
+// need Function to addEventListener for answer button 
+// need Function for number Of questions answer
+// need Function for final section that display final scores
+// need to save score to localStorage
+// need Function for user to input initials 
+// need to save initials to localStorage
+// need Functions to display highscore in list ordered
+ 
+
+// timer that counts down from 75
+function countdown() {
+    var timeleft = 75;
+}
+
 //Question for the code quiz
 var questions = [
 {
@@ -50,6 +75,14 @@ var questions = [
 }
 ];
 
-// localStorage to keep track of the scores
+// // localStorage to keep track of the scores
 var saveScore = function () {};
 var loadScore = function () {};
+
+var generateQuiz = function (questions, quiz) {};
+
+
+// need Function to addEventListener for submit score button 
+// need Function to addEventListener for go back button 
+// need Function to addEventListener for clear scores button 
+// need Function to addEventListener for view scores button
