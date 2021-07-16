@@ -1,48 +1,24 @@
+/****  Select All Elements ****/
+var start = document.querySelector("#start");
+var quiz = document.querySelector("#quiz");
+var questionsE1 = document.querySelector("#questions");
+var timerEl = document.querySelector("time");
+var secondsLeft = 75;
+var scoreTotalEl = document.querySelector("#score");
+// var introEl = document.querySelector("#intro");
+// var queriesEl = document.querySelector("queries");
+
+var questionCounter = 0;
+var score = 0;
+
 /****  Creating the Code Quiz ****/
-// create a quiz that has five questions
-//  * each question has a list of answer to select from
-//  * if user selects the correct answer display the word "Correct!"
-//  * if user selects the wrong answer (this would be an else statement)  display the word "Wrong!"
-//  * next question will appear after the questions have been answered
-// includes a timer in the upper right hand corner
-//  * using a countdown function with certain amount of time to take the quiz
-//  * time is subtract for the quiz if question is answer incorrectly (decrement count/er--)
-// include a "View Highscore" in the upper left hand corner
-//  * use increment count/er++ to add score together
-// when all the questions or timer reaches 0 game is over
-// when game is over the user can save their name and score
-// use the assignments 2-5 as resource to build the quiz
 
-/**** Styling the Code Quiz ****/
-// use assignment 1 to style the quiz
 
-// need variables for timer
-var timerEl = document.getElementById('');
-// need variable for seconds counting down from 75
-var secondsEl = function() {};
-// need variable for scores
-var scoreTotalEl = function() {};
-// need variable and Function for intro section
-var introEl = function () {};
-// need Function to addEventListener for start button 
-var startBtn = document.getElementById('');
-// need Function for question to be displayed
-// need Function to addEventListener for answer button 
-// need Function for number Of questions answer
-// need Function for final section that display final scores
-// need to save score to localStorage
-// need Function for user to input initials 
-// need to save initials to localStorage
-// need Functions to display highscore in list ordered
  
 
-// timer that counts down from 75
-function countdown() {
-    var timeleft = 75;
-}
 
 //Question for the code quiz
-var questions = [
+var questionAsk = [
 {
     //question 1
     question: "Commonly used data types do NOT include:",
@@ -75,14 +51,23 @@ var questions = [
 }
 ];
 
+
+var countdown = function() {
+    var timeLeft = 75;
+
+    var timeInterval = setInterval(function() {
+        secondsLeft--;
+    })
+};
+var startQuiz = function() {
+    introEl.style.display = "none";
+    questionsEl.style.display = "block";
+    
+};
+
 // // localStorage to keep track of the scores
 var saveScore = function () {};
 var loadScore = function () {};
 
 var generateQuiz = function (questions, quiz) {};
 
-
-// need Function to addEventListener for submit score button 
-// need Function to addEventListener for go back button 
-// need Function to addEventListener for clear scores button 
-// need Function to addEventListener for view scores button
