@@ -1,73 +1,115 @@
 /****  Select All Elements ****/
-var start = document.querySelector("#start");
-var quiz = document.querySelector("#quiz");
-var questionsE1 = document.querySelector("#questions");
-var timerEl = document.querySelector("time");
-var secondsLeft = 75;
-var scoreTotalEl = document.querySelector("#score");
-// var introEl = document.querySelector("#intro");
-// var queriesEl = document.querySelector("queries");
+//Make variable names the same as classes and ids 
+var viewHighScores = document.querySelector("#view-scores");
+// console.log(viewHighScores);
+var timer = document.querySelector(".time");
+// console.log(timer);
+var startButton = document.querySelector("#startbtn");
+// console.log(startbtn);
+var questions = document.querySelector("#questions");
+// console.log(questions);
+var answerChoice1 = document.querySelector("#answer1");
+// console.log(answerChoice1);
+var answerChoice2 = document.querySelector("#answer2");
+// console.log(answerChoice2);
+var answerChoice3 = document.querySelector("#answer3");
+// console.log(answerChoice3);
+var answerChoice4 = document.querySelector("#answer4");
+// console.log(answerChoice4);
+var scoreTotal = document.querySelector("#score");
+// console.log(scoreTotal);
+var initials = document.querySelector("#initials");
+// console.log(initials);
+var submitButton = document.querySelector("#submit-score");
+// console.log(submitButton);
+var scoreList = document.querySelector("#score-list");
+// console.log(scoreList);
+var backButton = document.querySelector("#backbtn");
+// console.log(backButton);
+var clearScores = document.querySelector("#clear-scores");
+console.log(clearScores);
+// var secondsLeft = 75;
 
-var questionCounter = 0;
-var score = 0;
 
-/****  Creating the Code Quiz ****/
+// var questionCounter = 0;
+// var score = 0;
 
+
+// // add event listener to start button and each answer button
+
+// /** use innerText for each question 
+//     use innerText for each answer
+//     add event listener to parent of each answer **/
 
  
 
 
 //Question for the code quiz
 var questionAsk = [
-{
+{ // break down each answer individual
     //question 1
     question: "Commonly used data types do NOT include:",
-    answer: ["1. strings",  "2.booleans", "3. alerts", "4. numbers"],
-    correctAnswer: "",
+    choice1: "strings",  
+    choice2: "booleans", 
+    choice3: "alerts", 
+    choice4: "numbers",
+    correctAnswer: "choice3",
 },
 {
     // question 2
-    question: "The condition if/else statement is enclosed within _____:",
-    answer: ["1. quotes", "2. Curly brackets", "3.parentheses", "4. square brackets"],
-    correctAnswer:"",
+    question: "What does DOM stand for?",
+    choice1: "Document Object Model",
+    choice2:  "Display Object Management", 
+    choice3: "Digital Ordinance Model", 
+    choice4: "Desktop Oriented Mode",
+    correctAnswer:"choice1",
 },
 {
     // question 3
-    question: "Arrays in JavaScript can be used to store ___:",
-    answer: ["1. number and strings", "2. other arrays", "3. booleans", "4. all of the above"],
-    correctAnswer:""
+    question: "What HTML attribute references an external JavaScript file?",
+    choice1: "href", 
+    choice2: "src", 
+    choice3: "class", 
+    choice4: "id",
+    correctAnswer:"choice2"
 },
 {
     // question 4
     question: "String values must be enclosed within ___ when being assigned to variables",
-    answer: ["1. commas", "2. curly brackets", "3. quotes", "4. [parentheses"],
-    correctAnswer:""
+    choice1: "commas",
+    choice2: "curly brackets", 
+    choice3: "quotes",
+    choice4: "parentheses",
+    correctAnswer:"choice3"
 },
 {
     // question 5
     question: "A very useful tool used during development and debugging for printing content to the debugger is:",
-    answer: ["1. JavaScript", "2.terminal/bash", "3. for loops", "4. console.log"],
-    correctAnswer:"",
+    choice1: "JavaScript",
+    choice2: "terminal/bash", 
+    choice3: "for loops", 
+    choice4: "console.log",
+    correctAnswer:"choice4",
 }
 ];
 
+// /****  Creating the Code Quiz ****/
 
-var countdown = function() {
-    var timeLeft = 75;
-
-    var timeInterval = setInterval(function() {
-        secondsLeft--;
-    })
-};
-var startQuiz = function() {
-    introEl.style.display = "none";
-    questionsEl.style.display = "block";
+// var startQuiz = function() {
+//     introEl.style.display = "none";
+//     questionsEl.style.display = "block";
     
-};
+// };
 
-// // localStorage to keep track of the scores
-var saveScore = function () {};
-var loadScore = function () {};
+// var countdown = function() {
+//     var timeLeft = 75;
 
-var generateQuiz = function (questions, quiz) {};
+//     var timeInterval = setInterval(function() {
+//         secondsLeft--;
+//     });
+// };
+// // // localStorage to keep track of the scores
+// var saveScore = function () {};
+// var loadScore = function () {};
 
+// var generateQuiz = function (questions, quiz) {};
