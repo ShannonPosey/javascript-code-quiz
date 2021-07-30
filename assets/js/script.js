@@ -97,15 +97,10 @@ var questionAsk = [
 // /****  Creating the Code Quiz ****/
 
 var startQuiz = function(event) {
-    intro.style.display = "none";
-    questions.style.display = "block";
-    
-    
 };
 
 questions = function() {
-    intro.style.display = "block";
-    questions.style.display = "none";
+    
     questions.innerText = questionAsk;
 console.log(questions);
 
@@ -114,7 +109,7 @@ console.log(questions);
 var countdown = function() {
     var timeLeft = 75;
 
-    var timeterval = setInterval(function() {
+    var timeInterval = setInterval(function() {
         secondsLeft--;
         if(timeLeft === 0) {
 
