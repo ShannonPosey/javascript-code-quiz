@@ -27,7 +27,8 @@ var scoreList = document.querySelector("#score-list");
 var backButton = document.querySelector("#backbtn");
 // console.log(backButton);
 var clearScores = document.querySelector("#clear-scores");
-console.log(clearScores);
+// console.log(clearScores);
+var intro = document.querySelector("#intro");
 // var secondsLeft = 75;
 
 
@@ -95,21 +96,36 @@ var questionAsk = [
 
 // /****  Creating the Code Quiz ****/
 
-// var startQuiz = function() {
-//     introEl.style.display = "none";
-//     questionsEl.style.display = "block";
+var startQuiz = function(event) {
+    intro.style.display = "none";
+    questions.style.display = "block";
     
-// };
+    
+};
 
-// var countdown = function() {
-//     var timeLeft = 75;
+questions = function() {
+    intro.style.display = "block";
+    questions.style.display = "none";
+    questions.innerText = questionAsk;
+console.log(questions);
 
-//     var timeInterval = setInterval(function() {
-//         secondsLeft--;
-//     });
-// };
+};
+
+var countdown = function() {
+    var timeLeft = 75;
+
+    var timeterval = setInterval(function() {
+        secondsLeft--;
+        if(timeLeft === 0) {
+
+        }
+    });
+    console.log(countdown);
+};
 // // // localStorage to keep track of the scores
 // var saveScore = function () {};
 // var loadScore = function () {};
 
 // var generateQuiz = function (questions, quiz) {};
+
+startButton.addEventListener("click", startQuiz);
